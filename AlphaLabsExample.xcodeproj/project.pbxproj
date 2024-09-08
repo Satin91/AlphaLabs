@@ -9,14 +9,18 @@
 /* Begin PBXBuildFile section */
 		8E936E0F2C8C929F008F598F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E936E0E2C8C929F008F598F /* AppDelegate.swift */; };
 		8E936E112C8C929F008F598F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E936E102C8C929F008F598F /* SceneDelegate.swift */; };
-		8E936E132C8C929F008F598F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E936E122C8C929F008F598F /* ViewController.swift */; };
+		8E936E132C8C929F008F598F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E936E122C8C929F008F598F /* HomeViewController.swift */; };
 		8E936E182C8C92A1008F598F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E936E172C8C92A1008F598F /* Assets.xcassets */; };
 		8E936E1B2C8C92A1008F598F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E936E192C8C92A1008F598F /* LaunchScreen.storyboard */; };
 		8E936E282C8C96C8008F598F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E936E272C8C96C8008F598F /* MainView.swift */; };
+		8EA523332C8E0AE6005FE51F /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA523322C8E0AE6005FE51F /* HomeTableView.swift */; };
+		8EA523352C8E257B005FE51F /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA523342C8E257B005FE51F /* TableViewCellModel.swift */; };
+		8EA523372C8E2673005FE51F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA523362C8E2673005FE51F /* TableViewCell.swift */; };
+		8EBB36752C8E38EA00A18E67 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBB36742C8E38EA00A18E67 /* Main.swift */; };
 		8EFDFD102C8C9C4B00478500 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8EFDFD0F2C8C9C4B00478500 /* SnapKit */; };
 		8EFDFD122C8CA56900478500 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDFD112C8CA56900478500 /* OnboardingViewController.swift */; };
 		8EFDFD152C8CA79000478500 /* OnboardingOneBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDFD142C8CA79000478500 /* OnboardingOneBackgroundView.swift */; };
-		8EFDFD172C8CA7B500478500 /* Onboarding2BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDFD162C8CA7B500478500 /* Onboarding2BackgroundView.swift */; };
+		8EFDFD172C8CA7B500478500 /* OnboardingTwoBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDFD162C8CA7B500478500 /* OnboardingTwoBackgroundView.swift */; };
 		8EFDFD1A2C8CA91900478500 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDFD192C8CA91900478500 /* HexColor.swift */; };
 		8EFDFD1C2C8CAE2D00478500 /* OnboardingBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFDFD1B2C8CAE2D00478500 /* OnboardingBottomView.swift */; };
 /* End PBXBuildFile section */
@@ -25,14 +29,18 @@
 		8E936E0B2C8C929F008F598F /* AlphaLabsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlphaLabsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E936E0E2C8C929F008F598F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E936E102C8C929F008F598F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8E936E122C8C929F008F598F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E936E122C8C929F008F598F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8E936E172C8C92A1008F598F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E936E1A2C8C92A1008F598F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E936E1C2C8C92A1008F598F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E936E272C8C96C8008F598F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8EA523322C8E0AE6005FE51F /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
+		8EA523342C8E257B005FE51F /* TableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellModel.swift; sourceTree = "<group>"; };
+		8EA523362C8E2673005FE51F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8EBB36742C8E38EA00A18E67 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		8EFDFD112C8CA56900478500 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		8EFDFD142C8CA79000478500 /* OnboardingOneBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingOneBackgroundView.swift; sourceTree = "<group>"; };
-		8EFDFD162C8CA7B500478500 /* Onboarding2BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2BackgroundView.swift; sourceTree = "<group>"; };
+		8EFDFD162C8CA7B500478500 /* OnboardingTwoBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTwoBackgroundView.swift; sourceTree = "<group>"; };
 		8EFDFD192C8CA91900478500 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
 		8EFDFD1B2C8CAE2D00478500 /* OnboardingBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBottomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,7 +90,10 @@
 		8E936E222C8C9550008F598F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				8E936E122C8C929F008F598F /* ViewController.swift */,
+				8E936E122C8C929F008F598F /* HomeViewController.swift */,
+				8EA523322C8E0AE6005FE51F /* HomeTableView.swift */,
+				8EA523342C8E257B005FE51F /* TableViewCellModel.swift */,
+				8EA523362C8E2673005FE51F /* TableViewCell.swift */,
 				8EFDFD132C8CA74C00478500 /* Onboarding */,
 			);
 			path = UIKit;
@@ -92,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				8E936E0E2C8C929F008F598F /* AppDelegate.swift */,
+				8EBB36742C8E38EA00A18E67 /* Main.swift */,
 				8E936E102C8C929F008F598F /* SceneDelegate.swift */,
 			);
 			path = Application;
@@ -111,7 +123,7 @@
 				8EFDFD112C8CA56900478500 /* OnboardingViewController.swift */,
 				8EFDFD142C8CA79000478500 /* OnboardingOneBackgroundView.swift */,
 				8EFDFD1B2C8CAE2D00478500 /* OnboardingBottomView.swift */,
-				8EFDFD162C8CA7B500478500 /* Onboarding2BackgroundView.swift */,
+				8EFDFD162C8CA7B500478500 /* OnboardingTwoBackgroundView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -200,13 +212,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E936E132C8C929F008F598F /* ViewController.swift in Sources */,
+				8E936E132C8C929F008F598F /* HomeViewController.swift in Sources */,
 				8EFDFD1C2C8CAE2D00478500 /* OnboardingBottomView.swift in Sources */,
 				8E936E0F2C8C929F008F598F /* AppDelegate.swift in Sources */,
 				8EFDFD122C8CA56900478500 /* OnboardingViewController.swift in Sources */,
-				8EFDFD172C8CA7B500478500 /* Onboarding2BackgroundView.swift in Sources */,
+				8EBB36752C8E38EA00A18E67 /* Main.swift in Sources */,
+				8EFDFD172C8CA7B500478500 /* OnboardingTwoBackgroundView.swift in Sources */,
 				8E936E282C8C96C8008F598F /* MainView.swift in Sources */,
+				8EA523332C8E0AE6005FE51F /* HomeTableView.swift in Sources */,
 				8EFDFD1A2C8CA91900478500 /* HexColor.swift in Sources */,
+				8EA523352C8E257B005FE51F /* TableViewCellModel.swift in Sources */,
+				8EA523372C8E2673005FE51F /* TableViewCell.swift in Sources */,
 				8EFDFD152C8CA79000478500 /* OnboardingOneBackgroundView.swift in Sources */,
 				8E936E112C8C929F008F598F /* SceneDelegate.swift in Sources */,
 			);

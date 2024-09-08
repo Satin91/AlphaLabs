@@ -22,6 +22,7 @@ class OnboardingBottomView: UIView {
     var titleText = String()
     var subtitleText = String()
     
+    var onTapGesture: () -> Void = {}
     
     convenience init(title: String, text: String, leftText: String, rightText: String) {
         self.init(frame: CGRect.zero)
@@ -56,22 +57,29 @@ class OnboardingBottomView: UIView {
         
         textLabel.textColor = .hex(hex: "3E3E3F")
         textLabel.font = .systemFont(ofSize: 17, weight: .light)
-        textLabel.text = "Welcome to our food delivery service! Explore our extensive selection of restaurants and dishes, and simply add your desired items to the cart when you're ready to order. Checkout is a breeze!"
+        textLabel.text = subtitleText
         textLabel.numberOfLines = 0
     }
     
     
     func setupButtons() {
-        var configuration = UIImage.SymbolConfiguration(font: .systemFont(ofSize: 14))
-        
-        let leftButtonImage = UIImage(systemName: "chevron.right", withConfiguration: UIImage.SymbolConfiguration(font: .systemFont(ofSize: 12)))!.withTintColor(.black, renderingMode: .alwaysOriginal)
-        let rightButtonImage = UIImage(systemName: "chevron.right", withConfiguration: UIImage.SymbolConfiguration(font: .systemFont(ofSize: 12)))!.withTintColor(.white, renderingMode: .alwaysOriginal)
+        let leftButtonImage = UIImage(
+            systemName: "chevron.right",
+            withConfiguration: UIImage.SymbolConfiguration(font: .systemFont(ofSize: 12)))!.withTintColor(.black,
+            renderingMode: .alwaysOriginal
+        )
+        let rightButtonImage = UIImage(
+            systemName: "chevron.right",
+            withConfiguration: UIImage.SymbolConfiguration(font: .systemFont(ofSize: 12)))!.withTintColor(.white,
+            renderingMode: .alwaysOriginal
+        )
         
         leftButton.setTitle(leftButtonText, for: .normal)
         leftButton.setTitleColor(.hex(hex: "222222"), for: .normal)
         leftButton.setImage(leftButtonImage, for: .normal)
         leftButton.semanticContentAttribute = .forceRightToLeft
         leftButton.backgroundColor = .clear
+        leftButton.addTarget(self, action: #selector(leftButtonTapped(_:)), for: .touchUpInside)
 
         
         rightButton.backgroundColor = .hex(hex: "F74E49")
@@ -114,9 +122,8 @@ class OnboardingBottomView: UIView {
         }
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
+    @objc func leftButtonTapped(_ button: UIButton) {
+        onTapGesture()
     }
     
     required init?(coder: NSCoder) {
