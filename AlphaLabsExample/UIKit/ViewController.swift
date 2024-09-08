@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     }
     
     func configureUI() {
-        self.view.backgroundColor = .blue
+        self.view.backgroundColor = .systemGray
     }
 }
 
